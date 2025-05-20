@@ -1,0 +1,605 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+p,
+a,
+ul li,
+h1,
+h2,
+h3 {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.6rem;
+    letter-spacing: 0.15rem;
+    margin-bottom: 0.5em;
+}
+
+/* ******************** utality classes ******************* */
+.lg-heading {
+    font-size: 3.5rem;
+}
+
+.md-heading {
+    font-size: 2.2rem;
+}
+
+.t-white {
+    color: white;
+}
+
+.t-orange {
+    color: #fd513a;
+}
+
+.t-black {
+    color: rgb(235, 231, 231);
+}
+
+.t-brown {
+    color: rgb(114, 113, 113);
+}
+
+.clearfix {
+    clear: both;
+}
+
+.bg-dark {
+    background-color: rgb(0 4 22 / 90%);
+}
+
+.bg-orange {
+    background-color: #fd513a;
+}
+
+.container {
+    max-width: 160rem;
+    width: 92%;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 0.7em 1.2em;
+    border-radius: 10em;
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0.5em;
+}
+
+.btn-primary {
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ddd;
+}
+
+.btn-secondary {
+    border: 2px solid rgb(255, 124, 10);
+    font-size: 1.2em;
+}
+
+.btn-secondary:hover {
+    background-color: antiquewhite;
+}
+
+
+
+
+
+
+
+body {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ****************** header ****************** */
+.home-header {
+    position: relative;
+    min-height: 50rem;
+    height: 95vh;
+    max-height: 93.621rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header-img.jpg) no-repeat center center/cover;
+}
+
+.logo {
+    padding: 0.2em;
+    float: left;
+}
+
+.navigation {
+    float: right;
+}
+
+nav h1 {
+    margin-bottom: 0;
+}
+
+.navigation li {
+    display: inline-block;
+    padding-top: 0.2em;
+    margin: 1.2em 0.3em;
+    width: 10rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.navigation li a {
+    padding: 0.1em;
+    color: white;
+}
+
+.navigation a:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.front {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em;
+    line-height: 3em;
+}
+
+.front p {
+    font-size: 1.2rem;
+    max-height: 14.5rem;
+    overflow: hidden;
+}
+
+
+
+/* *********************** cards ****************** */
+.cards {
+    background-color: #ddd;
+    padding: 10em 0;
+}
+
+.card-1 {
+    margin-bottom: 10em;
+}
+
+.card-1,
+.card-2 {
+    height: 30rem;
+    box-shadow: 0px 0px 2rem 0px #aaa;
+}
+
+.card-1 p,
+.card-2 p {
+    height: 14.4rem;
+    overflow: hidden;
+}
+
+.img,
+.text-box {
+    float: left;
+}
+
+.img,
+.text-box {
+    float: right;
+}
+
+.img,
+.text-box {
+    height: 100%;
+    width: 50%;
+}
+
+
+.cards h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.text-box {
+    padding: 2em;
+    background-color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* **************** t-detail boxes **************** */
+.t-detail {
+    padding: 10em 0;
+    box-shadow: 0px 0px 0.7rem 0px #aaa;
+}
+
+.boxes {
+    box-shadow: 0px 0px 2rem 0px #aaa;
+}
+
+.box {
+    float: left;
+    width: 33.333%;
+    height: 30rem;
+    padding: 3em;
+    text-align: center;
+    color: white;
+}
+
+.box p {
+    height: 16.8rem;
+    overflow: hidden;
+}
+
+
+/* ************* home footer ******************** */
+.home-footer {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.home-footer .icons {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.home-footer .icons i{
+    margin-left: 1rem;
+}
+
+
+
+
+
+/* ************************ about page******************* */
+.about h1 {
+    font-weight: 500;
+    border-bottom: 5px solid #fd513a;
+    margin-top: 0.8em;
+}
+
+.about .about-paragraph {
+    max-height: 10rem;
+    overflow: hidden;
+}
+
+.about-list {
+    padding: 1em;
+}
+
+.list-1,
+.list-2 {
+    width: 50%;
+    max-height: 150rem;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    color: black;
+}
+
+.about-list p {
+    max-height: 7rem;
+    overflow: hidden;
+}
+
+.list-1 p::before,
+.list-2 p::before {
+    content: '\2713';
+    color: #fd513a;
+    margin-right: 0.5em;
+    font-weight: 900;
+}
+
+.numbering {
+    margin: 1em;
+}
+
+.num {
+    text-align: center;
+    float: left;
+    width: 25%;
+    font-weight: bold;
+}
+
+.num h3 {
+    font-weight: 900;
+}
+
+.about-footer {
+    padding: 1em;
+    font-weight: 600;
+    box-shadow: 0px 0px 1rem 0px #767676;
+}
+
+.about-footer p {
+    float: left;
+    margin: 1.5em 0;
+    letter-spacing: 0.3rem;
+    width: 60%;
+    max-height: 7.2rem;
+    overflow: hidden;
+}
+
+.about-footer a {
+    border: 3px solid white;
+    float: right;
+    font-size: 1.8rem;
+    padding: 1em 4em;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+
+
+
+/* ******************** contact page ******************* */
+.contact {
+    padding: 5em 0;
+    background-color: #f1f0f0;
+}
+
+.contact-box,
+.form-box {
+    width: 49%;
+    height: 69.4141rem;
+    padding: 1em;
+    background-color: white;
+}
+
+.contact-box {
+    float: left;
+}
+
+.form-box {
+    float: right;
+}
+
+.contact-box h3 {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: rgb(148, 148, 148);
+}
+
+.contact-box i {
+    margin-right: 0.4em;
+}
+
+.contact-box p {
+    font-weight: 550;
+    letter-spacing: 0.1em;
+}
+
+.contact-box .contact-group {
+    margin-bottom: 1.5em;
+}
+
+.contact-box img {
+    max-width: 90%;
+    height: 40rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2px;
+}
+
+
+
+
+.form-box {
+    font-size: 2rem;
+}
+
+.form-box h2 {
+    border-bottom: 5px solid #fd513a;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.4rem;
+}
+
+.form-box p {
+    max-height: 15rem;
+    overflow: hidden;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group label::after {
+    content: '*';
+    color: #fd513a;
+}
+
+.form-group input,
+textarea {
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+.form-box .btn-submit {
+    display: block;
+    margin: auto;
+    padding: 0.5em 3em;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* ******************* media quiries *************************** */
+@media screen and (min-width: 2001px) {
+    html {
+        font-size: 14.5px;
+    }
+}
+
+@media screen and (min-width: 1701px) and (max-width: 2000px) {
+    :root {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1368px) and (max-width: 1700px) {
+    :root {
+        font-size: 11.5px;
+    }
+}
+
+@media screen and (min-width: 571px) and (max-width: 950px) {
+    :root {
+        font-size: 8.5px;
+    }
+
+    body {
+        min-height: auto;
+    }
+
+    .about-footer a {
+        font-size: 1.6rem;
+        padding: 1em 2em;
+    }
+
+    .contact-box,
+    .form-box {
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 2em 0;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    :root {
+        font-size: 8px;
+    }
+
+    body {
+        min-height: auto;
+    }
+
+    /* ******************* home page ******************** */
+    .logo,
+    .navigation {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .home-header .front {
+        width: 248.5px;
+    }
+
+    .home-header .front h1 {
+        display: none;
+    }
+
+    .home-header .front p {
+        font-size: 1.5rem;
+    }
+
+    .card-1,
+    .card-2 {
+        height: auto;
+    }
+
+    .img,
+    .text-box {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    .boxes {
+        box-shadow: none;
+    }
+
+    .box {
+        float: none;
+        width: 100%;
+        height: 30rem;        
+        box-shadow: 0px 0px 2rem 0px #aaa;
+    }
+
+    .box-1,
+    .box-2{
+        margin-bottom: 5rem;
+    }
+
+    /* ********************* about page ******************** */
+    .list-1,
+    .list-2 {
+        text-align: left;
+        float: none;
+        width: 100%;
+    }
+
+    .numbering .num h3,
+    .numbering .num div{
+        font-size: 1.5rem;
+    }
+
+    .numbering .num{
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .num:nth-child(4) {
+        border: none;
+    }
+
+    .about-footer p,
+    .about-footer a {
+        float: none;
+        display: block;
+        width: 90%;
+        margin: 0.2em auto;
+        text-align: center;
+    }
+
+    .about-footer a {
+        font-size: 3rem;
+        padding: 0.2em 0;
+    }
+
+    /* ********************* contact page ***************** */
+    .contact-box,
+    .form-box {
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 2em 0;
+    }
+}
+
